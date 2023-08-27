@@ -1,0 +1,12 @@
+[user]
+	name = Tambouil
+	email = v.berceaux@gmail.com
+
+[init]
+  defaultBranch = main
+
+[core]
+  autocrlf = input
+
+[push]
+  autoSetupRemote = true
