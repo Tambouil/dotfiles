@@ -30,30 +30,22 @@ brew update
 info 'Upgrade any already-installed formulae'
 brew upgrade
 
-info 'Installing oh-my-zsh'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null
-success 'Done'
-
-info 'Installing zsh-autosuggestions'
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-success 'Done'
-
-info 'Installing zsh-syntax-highlighting'
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+info 'Installing antigen'
+brew install antigen
 success 'Done'
 
 info 'Installing starship'
-brew install starship > /dev/null
+brew install starship 
 success 'Done'
 
 info 'Installing Monolisa font'
-brew tap homebrew/cask-fonts > /dev/null
+brew tap homebrew/cask-fonts
 cp fonts/Monolisa/*.otf ~/Library/Fonts
 cp fonts/Monolisa/*.ttf ~/Library/Fonts
 success 'Done'
 
 info 'Installing iTerm2'
-brew install --cask iterm2 > /dev/null
+brew install --cask iterm2
 success 'Done'
 
 info 'Installing iTerm2 config'
@@ -62,20 +54,20 @@ cp iterm2/profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
 success 'Done'
 
 info 'Installing GNU core utilities (those that come with OS X are outdated)'
-brew install coreutils > /dev/null
+brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 success 'Done'
 
 info "Installing some other useful utilities like 'sponge'"
-brew install moreutils > /dev/null
+brew install moreutils
 success 'Done'
 
 info "Installing GNU 'find', 'locate', 'updatedb', and 'xargs', 'g'-prefixed"
-brew install findutils > /dev/null
+brew install findutils
 success 'Done'
 
 info "Installing GNU 'sed', overwriting the built-in 'sed'"
-brew install gnu-sed > /dev/null
+brew install gnu-sed
 success 'Done'
 
 info 'Installing dev tools'
@@ -151,7 +143,7 @@ brew install --cask insomnia
 success 'Done'
 
 info 'Installing App Cleaner'
-brew install --cask appcleaner > /dev/null
+brew install --cask appcleaner
 success 'Done'
 
 info 'Installing Rectangle'
