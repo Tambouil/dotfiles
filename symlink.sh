@@ -16,5 +16,6 @@ fi
 stow git
 stow zsh
 stow starship
+stow proto
 
 success 'All dotfiles have been symlinked'
