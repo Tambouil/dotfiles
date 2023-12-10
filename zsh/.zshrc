@@ -21,5 +21,6 @@ eval "$(starship init zsh)"
 bindkey '\t' autosuggest-accept
 
 # proto config
-export PROTO_ROOT="$HOME/.proto"
-export PATH="$PROTO_ROOT/bin:$PATH"
+export PROTO_HOME="$HOME/.proto"
+export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH"
+
