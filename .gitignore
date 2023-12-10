@@ -1,1 +1,6 @@
 .DS_Store
+proto/.proto/bin/
+proto/.proto/temp/
+proto/.proto/tools/
+proto/.proto/shims/
+proto/.proto/plugins/
