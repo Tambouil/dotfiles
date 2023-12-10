@@ -1,0 +1,9 @@
+node = "20.10.0"
+npm = "bundled"
+yarn = "4.0.2"
+
+[tools.node]
+intercept-globals = false
+
+[settings]
+auto-install = true
