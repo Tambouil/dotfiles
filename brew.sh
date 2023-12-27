@@ -49,8 +49,9 @@ brew install --cask iterm2
 success 'Done'
 
 info 'Installing iTerm2 config'
-mkdir -p ~/Library/Application\ Support/iTerm2/DynamicProfiles
-cp iterm2/profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
+cd iterm2
+./iterm.sh
+cd ..
 success 'Done'
 
 info 'Installing GNU core utilities (those that come with OS X are outdated)'
@@ -100,7 +101,7 @@ brew cleanup
 info 'Installing Proto'
 curl -fsSL https://moonrepo.dev/install/proto.sh | bash
 proto setup
-proto install node 18
+proto install node 20
 proto install yarn
 proto install pnpm
 success 'Done'

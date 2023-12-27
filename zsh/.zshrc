@@ -24,3 +24,7 @@ bindkey '\t' autosuggest-accept
 export PROTO_HOME="$HOME/.proto"
 export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH"
 
+# alias
+alias rsync='rsync -a --exclude=node_modules'
+
+

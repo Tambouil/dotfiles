@@ -2,7 +2,7 @@
 
 source helpers.sh
 
-echo 'Welcome to @romainlanz installation script'
+echo 'Welcome to @valbcx installation script'
 echo 'This script will configure macOS'
 
 user 'Are you sure to continue? (y/N) '
